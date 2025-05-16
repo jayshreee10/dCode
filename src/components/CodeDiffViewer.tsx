@@ -8,9 +8,13 @@ import * as Diff from 'diff';
 interface CodeDiffViewerProps {
   oldCode: string;
   newCode: string;
+  language?: string;
 }
 
-export default function CodeDiffViewer({ oldCode, newCode }: CodeDiffViewerProps) {
+export default function CodeDiffViewer({ 
+  oldCode, 
+  newCode
+}: CodeDiffViewerProps) {
   const [diffResult, setDiffResult] = useState<string>('');
   
   useEffect(() => {
@@ -41,6 +45,7 @@ export default function CodeDiffViewer({ oldCode, newCode }: CodeDiffViewerProps
         oldValue={oldCode}
         newValue={newCode}
         splitView={true}
+        disableWordDiff={false}
         useDarkTheme={false}
         extraLinesSurroundingDiff={3}
       />
