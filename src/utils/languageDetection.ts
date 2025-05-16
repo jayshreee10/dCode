@@ -126,7 +126,7 @@ type LanguageScore = {
     }
     
     // Default to JavaScript if no strong patterns are found
-    return { language: 'javascript', name: 'JavaScript' };
+    return { language: 'text', name: 'Text' };
   }
   
   // Combine file name and content detection
