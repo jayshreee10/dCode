@@ -1,5 +1,5 @@
 {
-  "name": "code-diff-checker",
+  "name": "diffchecker",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -20,7 +20,7 @@
     "react-diff-viewer-continued": "^3.4.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
-    "react-syntax-highlighter": "^15.6.1"
+    "react-syntax-highlighter": "^5.8.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
